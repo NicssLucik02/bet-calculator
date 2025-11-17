@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bet Calculator</title>
+        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/bet-slip.css">
+        <link rel="stylesheet" href="./styles/bet-history.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        >
+    </head>
+    <body>
+        <main>
+            <section class="bet-calculator">
+                <div class="bet-slip">
+                    <div class="bet-slip__title">
+                        <img src="./ticket.svg" alt="ticket" class="ticket-icon">
+                        Bet Slip
+                    </div>
+                    <form class="bet-slip__form">
+                        <div>
+                            <p class="input-label">Bet Amount</p>
+                            <input type="number" class="bet-slip__input amount" placeholder="0.00">
+                        </div>
+
+                        <div>
+                            <p class="input-label">Odds</p>
+                            <input type="number" class="bet-slip__input coefficient" placeholder="2.50">
+                        </div>
+
+                        <div>
+                            <label class="input-label">Bet Type</label>
+                            <select class="bet-slip__input select">
+                                <option value="" disabled selected>Select Bet type</option>
+                                <option value="Slots">Slots</option>
+                                <option value="Poker">Poker</option>
+                                <option value="Football">Football</option>
+                                <option value="Basketball">Basketball</option>
+                                <option value="Tennis">Tennis</option>
+                            </select>
+                        </div>
+                    </form>
+                    <div class="bet-slip__total">
+                        <p class="total-desc">
+                            Stake:
+                            <span class="total__amount">0.00</span>
+                        </p>
+                        <p class="total-desc">
+                            Odds:
+                            <span class="total__coefficient">0.00</span>
+                        </p>
+                        <hr class="divider">
+                        <p class="total-desc">
+                            Potential win:
+                            <span class="total">0.00</span>
+                        </p>
+                    </div>
+                    <button class="bet-slip__button">Place bet</button>
+                </div>
+
+                <div class="bet-history">
+                    <div class="bet-history__title">🎲 Bet History</div>
+                    <table class="bet-history__table">
+                        <thead class="history-table__header">
+                            <tr class="history-table__tr">
+                                <th>Date</th>
+                                <th>Type</th>
+                                <th>Stake</th>
+                                <th>Odds</th>
+                                <th>Potential</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            </div>
+        </main>
+    </body>
+    <script src="./script.js"></script>
+</html>

@@ -1,0 +1,26 @@
+:root {
+  --main-color: rgba(106, 106, 106, 0.776);
+  --text-color: rgb(51, 51, 51);
+  --blue-color: #0000ff;
+  --background-body-color: rgb(227, 231, 231);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-body-color);
+  font-family: "Roboto";
+}
+
+.bet-calculator {
+  display: flex;
+  justify-content: center;
+  padding-inline: 100px;
+  gap: 40px;
+}
+
+.divider {
+  border: 0.5px solid var(--main-color);
+}
